@@ -6,10 +6,10 @@ import {IoIosColorPalette} from 'react-icons/io'
 const Navbar = () => {
   return (
     <nav>
-    <div className="container nav__container">
-      <a href = "index.html " classname='nav__me' >
-        <img src={Me} alt="Me" />
-        </a>
+   <div className="container nav__container">
+    <a href="index.html"alt="Me" >
+      <img src={Me} alt="Me"/>
+    </a>
         
       <ul className='nav__menu'>
         {

@@ -1,18 +1,38 @@
+import React from 'react'
 import './about.css'
-import Me from '../../assets/me.jpg'
+import ME from '../../assets/me-about.jpg'
+import {FaAward} from'react-icons/fa'
+import {VscFolderLibrary} from'react-icons/vsc'
 
 const About = () => {
   return (
-    <section id="about">
-      <div className='container about__container'>
-        <div className='about__left'></div>
-        <div className='about__portrait'>
-          <img src={Me} alt='Me'/>
+    <section id='about'>
+      <h5>Get To Know</h5>
+      <h2>About Me</h2>
+
+      <div className="container about__container">
+        <div className="about__me">
+          <div className="about__me-imageabout__me-image">
+            <img src={ME} alt="me" />
           </div>
-        <div className='about__right'></div>
-        <h2>About Me</h2>
-        <div className='about__cards'></div>
-        <p>I am a front-end developer.As an enthusiastic and creative technologist with hands-on skills
+        </div>
+        <div className="about__content">
+          <div className="about__card">
+            <article className='about__card'>
+              <FaAward className='about__icon' />
+              <h5>Experience</h5>
+              <small>Internship Completed</small>
+            </article>
+
+          
+
+            <article className='about__card'>
+              <VscFolderLibrary className='about__icon' />
+              <h5>Project</h5>
+              <small>4 Project Completed</small>
+            </article>
+          </div>
+          <p>I am a front-end developer.As an enthusiastic and creative technologist with hands-on skills
            in a wide range of software, 
            tools and programming languages, 
            I am well positioned to leverage my abilities and qualification to thrive as a Front-end Developer
@@ -25,10 +45,13 @@ const About = () => {
           with a company to achieve a certain objective on time and excellence.
           Beside technology,I love writing journals,reading books.I also have interest on history.
           Travelling is also mine hobby.I love facing an exciting challenges.</p>
+
+          <a href="#contact" className='btn btn-primary'>Let's Talk </a>
+        </div>
       </div>
-    </section>
+      </section>
+
   )
 }
 
 export default About
-

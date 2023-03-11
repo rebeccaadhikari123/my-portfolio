@@ -12,19 +12,19 @@ header{
     flex-direction: column;
     align-items: center;
     position: relative;
-    background: lightpink;
+    background: whitesmoke;
 
 
 }
-.header__profile {
+.header__profile { 
     width: 18rem;
     height: 22rem;
     border-radius: 9rem 9rem 2rem 
     2rem;
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; 
 
-}
+ } 
 .header__container p {
     width: 35rem;
     text-align: center;
@@ -47,7 +47,7 @@ header{
 .header__socials a {
     width: 1.8rem;
     aspect-ratio: 1/1;
-    background: var(--color-light);
+    background: var(--color-black);
     display: grid;
     place-items: center;
     border-radius: var(--border-redius-3);
@@ -58,6 +58,7 @@ header{
     color: var(--color-white);
     transform: translate(-0.5rem);
 }
+
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width:1024px) {
     header {
@@ -65,7 +66,7 @@ header{
         height: 100vh;
     }    
 }
-/* MEDIA QUERIES (tablets) */
+/* MEDIA QUERIES (phones) */
 @media screen and (max-width:1024px) {
     .header__profile {
         width: 14rem;
@@ -85,3 +86,4 @@ header{
         display: none;
     }
 }
+

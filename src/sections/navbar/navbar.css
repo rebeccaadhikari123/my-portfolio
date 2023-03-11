@@ -5,8 +5,8 @@ nav{
     place-items: center;
     background: var(--color-primary);
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     z-index: 9;
     box-shadow: 0 1rem 1.5rem hsla(var(--color-primary), 68%, 42%, 20%);
     transition: var(--transition);
@@ -31,10 +31,9 @@ nav{
     gap: 3.5rem;
 
 }
-/* nav img{
+ /* nav img{ */
     display: none;
-}  */
-
+  */
 #theme__icon{                                       
     background: transparent;
     color: white;
